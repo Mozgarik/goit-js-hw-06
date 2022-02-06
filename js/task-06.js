@@ -4,7 +4,7 @@ const dataLength = validationInput.getAttribute('data-length')
 validationInput.addEventListener('blur', onInputChange);
 
 function onInputChange() {
-if (validationInput.value.length == dataLength) {
+if (validationInput.value.length === dataLength) {
 validationInput.classList.remove('invalid')
 validationInput.classList.add('valid');
 } else {
